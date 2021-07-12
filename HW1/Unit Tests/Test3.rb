@@ -20,25 +20,25 @@ class Test
 end
 
 describe Test do
-  let(:Test) { Test.new}
+  let(:test) { Test.new}
 
   it "test1" do
-    expect(Test.replicate(3,5)).to eq([5, 5, 5])
+    expect(test.replicate(3,5)).to eq([5, 5, 5])
   end
 
   it "test2" do
-    expect(Test.replicate(5,1)).to eq([1, 1, 1, 1, 1])
+    expect(test.replicate(5,1)).to eq([1, 1, 1, 1, 1])
   end
 
   it "test3" do
-    expect(Test.replicate(0,12)).to eq([])
+    expect(test.replicate(0,12)).to eq([])
   end
 
   it "test4" do
-    expect(Test.replicate(-1,12)).to eq([])
+    expect(test.replicate(-1,12)).to eq([])
   end
 
   it "test5" do
-    expect(Test.replicate(8,0)).to eq([0, 0, 0, 0, 0, 0, 0, 0])
+    expect(test.replicate(8,0)).to eq([0, 0, 0, 0, 0, 0, 0, 0])
   end
 end

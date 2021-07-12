@@ -16,28 +16,27 @@ class Test
         result.append(x**2)
       end
     end
-    puts "----------------------------"
     return result
   end
 end
 
 describe Test do
-  let(:Test) { Test.new}
+  let(:test) { Test.new}
 
   it "test1" do
-    expect(Test.square_or_square_root([4, 3, 9, 7, 2, 1 ])).to eq([2, 9, 3, 49, 4, 1])
+    expect(test.square_or_square_root([4, 3, 9, 7, 2, 1 ])).to eq([2, 9, 3, 49, 4, 1])
   end
 
   it "test2" do
-    expect(Test.square_or_square_root([100, 101, 5, 5, 1, 1])).to eq([10, 10201, 25, 25, 1, 1])
+    expect(test.square_or_square_root([100, 101, 5, 5, 1, 1])).to eq([10, 10201, 25, 25, 1, 1])
   end
 
   it "test3" do
-    expect(Test.square_or_square_root([1, 2, 3, 4, 5, 6])).to eq([1, 4, 9, 2, 25, 36])
+    expect(test.square_or_square_root([1, 2, 3, 4, 5, 6])).to eq([1, 4, 9, 2, 25, 36])
   end
 
   it "test4" do
-    expect(Test.square_or_square_root([0, 0, 2])).to eq([0, 0, 4])
+    expect(test.square_or_square_root([0, 0, 2])).to eq([0, 0, 4])
   end
 
 end
